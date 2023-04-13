@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(33, 32, 48) 0%,
+    rgb(181, 180, 204) 3%,
+    rgb(145, 142, 201) 3%,
+    rgb(130, 128, 189) 4%,
+    rgb(131, 130, 201) 13%,
+    rgb(99, 97, 224) 19%,
+    rgb(100, 98, 230) 22%,
+    rgb(99, 97, 214) 25%,
+    rgb(143, 143, 201) 31%,
+    rgb(142, 142, 189) 33%,
+    rgb(170, 170, 199) 35%,
+    rgb(88, 171, 196) 80%,
+    rgb(103, 190, 209) 89%,
+    rgb(99, 218, 241) 100%
+  );
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(213, 231, 247);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  background: #2833cf;
+}
+
+img {
+  width: 350px;
+  height: auto;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+em {
+  color: rgb(219, 148, 41);
+}
+
+.managers {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .managers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.manager {
+  background: #2833cf;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: left;
+  position: relative;
+}
+
+.manager img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.manager h2 {
+  margin-top: 1rem;
+}
+
+.manager h3 {
+  color: rgba(161, 11, 11, 0.884);
+}
+
+.manager h4 {
+  margin-bottom: 1rem;
+}
+
+.manager h5 {
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  color: aqua;
+}
+
+.logo {
+  width: 70px;
+  border: none;
+}
+
+.number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.65rem;
+  font-size: 0.9rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: rgba(0, 255, 255, 0.527);
+}
